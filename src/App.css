@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  height: 100vh;
+  background: rgb(21, 151, 140);
+  display: flex;/*Deixa os componentes no centro da pagina*/
+  justify-content: space-around;/*Define os espaços entre as variaveis*/
+  align-items: center;/*Centraliza as variaveis no centro da tela*/
 }
+.tweet{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.redElement{
+  color:red;
+  font-size: 1.2em;
+}
+.btn{
+  padding: 10px;
+
+  border-radius: 5px;
+  border-style: none;
+  border-bottom: 5px solid rgb(20, 122, 54);
+
   color: white;
+
+  font-weight: bolder;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: rgb(33, 199, 89);
+
+  transition: 0.1s ease all;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+  background-color: rgb(43, 163, 83);
+  border-style: none;
+ 
 }
